@@ -17,11 +17,11 @@
         <meta name="description" content="Ian Szot is a freelancer audio technician based in São Paulo - Brazil">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="manifest" href="../favicon/site.webmanifest">
+        <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#2b5797">
         <meta name="theme-color" content="#ffffff">
 
@@ -49,6 +49,9 @@
         .github{
             color:darkgray;
         }
+        strong{
+            font-weight: bold;
+        }
         </style>
     </head>
 
@@ -56,21 +59,42 @@
       <main class="container">
         <h1 class="mt-5">Ian Szot</h1>
         <p class="p1 lead">Audio technician based in São Paulo 🇧🇷</p>
-        <p class="p1">Below you can find out more info about me and how to get in contact.</p>
+        <p class="p1">Below you can find out more about me and how to get in contact.</p>
 
         <ul class="nav nav-pills justify-content-center" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" href="https://www.ianszot.com">About</a>
+              <a class="nav-link" href="https://www.ianszot.com">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.ianszot.com/contact">Contact</a>
+              <a class="nav-link active" href="https://www.ianszot.com/contact">Contact</a>
             </li>
           </ul>
         
-        <h3>About </h3>
-        <p1 class="p1">Born in Brazil, Ian Szot is an audio technician certified by the Institute of Audio and Video (IAV), where he developed his abilities to be a top level professional in the audio field.</p1>
-          <br><br>
-        <img src="images/image2.jpg" class="img-fluid mx-auto d-block" alt="mixing console" />
+        <!-- formulário aqui -->
+        
+        <div class="form-area">  
+            <form role="form" action="https://formspree.io/contact@ianszot.com" method="POST">
+            <h3>Contact</h3>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="_replyTo" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                        <textarea class="form-control" type="textarea" id="message" placeholder="Your Message" rows="7"></textarea>
+                        </div>
+                
+            <button type="button" id="submit" name="submit" class="btn btn-primary">SEND MESSAGE</button>
+            </form>
+        </div>
+        
+        <br>
+        <p class="p1">You can also send me a message through the email <strong><a href="mailto:contact@ianszot.com">contact@ianszot.com</a></strong></p>
 
         <hr>
 
